@@ -6,6 +6,8 @@ In this file i am going to write some description on every project.
 
 ## Linear regression fitting using Adam optimizer
 
+### Preamble
+
 Linear regression is one the easiest models of machine learning(both for understanding and coding).
 
 The optimization algortihm used in Linear Regression called Gradient Descent is quite computationally easy, but it has a lot weaknesses. It cannot be used for Deep learning, since its learning rate is not dynamical, and it can simply stop in local minimum, not the global one, etc.
@@ -20,5 +22,21 @@ Adam optimizer is used for deep learning, it finds the minimum more efficently, 
 
 Here is the formulas for updating weights in Adam:
 
-![image](https://user-images.githubusercontent.com/69817199/127413614-e05d7953-7c3d-415b-a946-0657c0f6b90e.png)
+![image](https://user-images.githubusercontent.com/69817199/127485737-7a0806f5-560b-4543-9565-444e744c1331.png)
+
+So why not to try using Adam in training Linear Regression and see what is actually better in this case: GD or Adam Optimizer.
+
+### Creating data
+
+To create data, i used `random` library and came with idea to create it in this way: 
+
+```Python
+import random
+
+n_samples = 500
+x_train = [random.randint(i, (i+random.randint(0,100))) + random.randint(0,100) for i in range(n_samples)]
+y_train = [random.randint(i, (i+random.randint(0,100))) + random.randint(0,100) for i in range(n_samples)]
+```
+So then, when i then ran `plt.scatter` i saw something like that: 
+
 
