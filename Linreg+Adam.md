@@ -1,11 +1,3 @@
-# Small and Research projects by sexozavr
-
-Here i will publish some of my 'one-day' projects.
-
-In this file i am going to write some description on every project. 
-
-## Linear regression fitting using Adam optimizer
-
 ### Preamble
 
 Linear regression is one the easiest models of machine learning(both for understanding and coding).
