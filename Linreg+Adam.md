@@ -25,10 +25,14 @@ To create data, i used `random` library and came with idea to create it in this 
 ```Python
 import random
 
+
 n_samples = 500
 x_train = [random.randint(i, (i+random.randint(0,100))) + random.randint(0,100) for i in range(n_samples)]
 y_train = [random.randint(i, (i+random.randint(0,100))) + random.randint(0,100) for i in range(n_samples)]
 ```
 So then, when i then ran `plt.scatter` i saw something like that: 
+
+![image](https://user-images.githubusercontent.com/69817199/158206631-7628abdf-be3d-436e-a403-87c85f378953.png)
+
 
 
